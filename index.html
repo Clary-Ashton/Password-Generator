@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="wrapper" >
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+  <!--style .card-->
+    <div class="card" style="background-color: blue";>
+        <div class="card-header">
+          <h2 style="text-align: center; color: white;">Generate a Password</h>
+          </div> 
+
+          <div class="card-body">
+            <textarea
+              readonly
+              id="password"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+            ></textarea>
+          </div>
+          
+          <!--addind section form-->
+          <form class="form">
+            <div>
+            <label for="characterAmountNumber">Number of Characters</label>
+            <input type="range" min="1" max="128" value="8" 
+            id="characterAmountNumber">
+            <input class="numberInput" type="number" min="1" max="128" value="8" 
+            id="characterAmountNumber">
+            </div>
+
+            <label for="includeUpperCase">Include UpperCase</label>
+            <input type="checkbox" id="includeUpperCase">
+
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox"id="includeNumbers">
+            
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox"id="includeSymbols">
+            </form>
+
+            <hr>
+            
+            <!--new footer-->
+            <section class="btn">
+              <button type="submit" value="submit">submit</button>
+            </section>
+            
+  <script src="script.js"></script>
+  
+</body>
+</html>
